@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>বাংলাদেশ ক্রিকেট টিমের কিছু কথা</title>
+<style>
+:root{
+  --accent:#e50914;
+  --bg:#05060a;
+  --muted:#ccc;
+}
+body{
+  margin:0;
+  font-family:"Noto Sans Bengali",sans-serif;
+  background:var(--bg);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  padding:15px;
+}
+.card{
+  max-width:750px;
+  width:100%;
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.2));
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+.header{
+  background:url('https://i.ibb.co/ZNZK8bM/cricket-bg.jpg') center/cover no-repeat;
+  min-height:200px;
+  position:relative;
+}
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;
+}
+h1{
+  margin:0;
+  font-size:1.5rem;
+  font-weight:700;
+}
+p{
+  margin:5px 0;
+  color:var(--muted);
+}
+.main{
+  padding:20px;
+}
+.cta{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:14px 20px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+  transition:all .2s;
+}
+.cta:hover{background:#ff1a1a;transform:scale(1.03);}
+.rating{color:#ffcc00;margin:8px 0;}
+#viewCount{color:#aaa;font-size:.9rem;margin-top:8px;}
+.comments{
+  margin-top:20px;
+  background:#0b0b0b;
+  padding:14px;
+  border-radius:10px;
+}
+.comment{margin-bottom:6px;}
+.footer{
+  text-align:center;
+  color:#777;
+  font-size:.85rem;
+  margin-top:30px;
+}
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.modal.show{display:flex;}
+.box{
+  background:#0e1628;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+}
+.count{font-size:2.3rem;color:var(--accent);font-weight:800;}
+@media(max-width:520px){
+  h1{font-size:1.25rem;}
+  .cta{width:100%;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <div class="overlay">
+      <h1>বাংলাদেশ ক্রিকেট টিমের কিছু কথা</h1>
+      <p>শেষ ম্যাচের পর ড্রেসিং রুমে যা ঘটেছে, তা কেউ কল্পনাও করেনি 😲</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="rating">⭐ ⭐ ⭐ ⭐ ✰ 4.8/5 (12K ভোট)</div>
+    <p id="viewCount">🔴 এখনই 3,412 জন দেখছে...</p>
+
+    <p style="margin-top:10px;">একজন সিনিয়র ক্রিকেটার এমন কিছু বলেছেন, যা শোনার পর পুরো টিম স্তব্ধ হয়ে যায়।  
+    সংবাদটি এখন সোশ্যাল মিডিয়ায় ভাইরাল 🔥 নিচে ক্লিক করলেই জানতে পারবে আসল ঘটনা।</p>
+
+    <a href="https://www.effectivegatecpm.com/xwnuwtj02?key=a59a4d4166fc0af03c3f53b35840b9d2" id="ctaBtn" class="cta">👉 বিস্তারিত জানতে ক্লিক করো</a>
+
+    <div id="offer" style="background:#150505; padding:10px; text-align:center; color:#ff3b00; font-weight:700; margin-top:15px;">
+      ⚡ শুধুমাত্র পরবর্তী <span id="timer">05:00</span> মিনিটের জন্য পাওয়া যাবে!
+    </div>
+
+    <div class="comments">
+      <p style="font-weight:700;">💬 দর্শকদের মন্তব্য</p>
+      <div class="comment">🏏 <b>Rahim:</b> ভাই সত্যি ঘটনা হলে খুব দুঃখজনক 😢</div>
+      <div class="comment">🔥 <b>Hasan:</b> এমন কথা আশা করিনি টিমের কারও কাছ থেকে!</div>
+      <div class="comment">😍 <b>Sadia:</b> ধন্যবাদ ভাই, আসল খবরটা জানলাম ❤️</div>
+    </div>
+
+    <div style="text-align:center;margin-top:20px;">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourpage.link" target="_blank" style="color:#0af;">📤 Facebook এ শেয়ার করো</a>
+    </div>
+
+    <div class="footer">
+      © 2025 Arat Khan Media | সকল অধিকার সংরক্ষিত
+    </div>
+  </div>
+</div>
+
+<!-- Countdown Modal -->
+<div id="modal" class="modal">
+  <div class="box">
+    <div style="font-weight:700;">প্রসেস শুরু হচ্ছে...</div>
+    <div class="count" id="countdown">5</div>
+    <div style="color:#aaa;">৫ সেকেন্ড পর বিস্তারিত দেখা যাবে...</div>
+  </div>
+</div>
+
+<script>
+// 🔢 Fake view counter
+setInterval(()=>{
+ let random=Math.floor(3000+Math.random()*800);
+ document.getElementById('viewCount').textContent=`🔴 এখনই ${random.toLocaleString()} জন দেখছে...`;
+},4000);
+
+// ⏰ Countdown offer
+let t=300;
+setInterval(()=>{
+ let m=Math.floor(t/60);
+ let s=(t%60).toString().padStart(2,'0');
+ document.getElementById('timer').textContent=`${m}:${s}`;
+ if(t>0) t--;
+},1000);
+
+// 🎬 CTA click with countdown
+const ADSTERRA_LINK="YOUR_ADSTERRA_LINK"; // 🔗 তোমার লিংক এখানে বসাও
+const cta=document.getElementById('ctaBtn');
+const modal=document.getElementById('modal');
+const count=document.getElementById('countdown');
+cta.addEventListener('mouseenter',()=>cta.textContent='😲 কী ঘটেছিল জানতে ক্লিক করো');
+cta.addEventListener('mouseleave',()=>cta.textContent='👉 বিস্তারিত জানতে ক্লিক করো');
+
+cta.addEventListener('click',e=>{
+ e.preventDefault();
+if(ADSTERRA_LINK==="YOUR_ADSTERRA_LINK"){alert("🔗 তোমার Adsterra লিংক বসাও!");return;}
+ modal.classList.add('show');
+ let c=5;
+ count.textContent=c;
+ const timer=setInterval(()=>{
+   c--;
+   count.textContent=c;
+   if(c<=0){
+     clearInterval(timer);
+     modal.classList.remove('show');
+     window.open(ADSTERRA_LINK,'_blank');
+   }
+ },1000);
+});
+</script>
+
+</body>
+</html>
